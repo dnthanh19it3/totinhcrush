@@ -42,7 +42,10 @@ $(document).ready(function () {
       imageAlt: "Custom image",
     }).then(function () {
       $(".content").show(200);
-      document.getElementById("myAudio").play();
+      var a = document.getElementById("myAudio");
+      a.volume = 0.6;
+      a.play();
+
     });
   }
 
